@@ -1,0 +1,15 @@
+ Metodo HTTP 
+GET    -   Buscar uma informação do banck-end
+POST   -   Criar uma informação do banck-end
+PUT    -   Alterar uma informação do banck-end
+DELETE -   Deletar uma informação do banck-end
+
+Tipos de parametros
+Querry Params: Paraâmetros nomeados enviados na rota após "?" (Filtros/Paginação)
+Ex: '?page=2&name=Diego&idade=20' || acessado por request.query;
+Route Params: Parâmentros utilizados para identificar recursos
+Ex: '/:{id}' // '/:1'(id=1) || acessado por request.params
+Request Body: Corpo da requisição, usado para criar ou utilizar recursos
+Ex: json{objeto} || acessado por request.body
+
+ 
