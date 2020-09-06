@@ -6,7 +6,6 @@ module.exports = {
 
         const [count] = await connection('incidents').count() //contador
 
-        console.log(count);
 
         const incidents = await connection('incidents')
             .join('ongs', 'ong_id', '=', 'incidents.ong_id') //relaciona as duas tabelas

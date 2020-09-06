@@ -4,7 +4,7 @@ const routes = require('./routes') //./ Serve para indentificar que routes é um
 
 const app = express();
 
-app.unsubscribe(cors());
+app.use(cors()); //Use o "unsubscribe" 
 app.use(express.json()); //Converte o corpo da requisição em JSON
 app.use(routes);
 
